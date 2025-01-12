@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .top-image{
+            width: 100%;
+            height: 250px;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            height: calc(100vh - 250px); 
+        }
+        .left-section {
+            flex: 2;
+            background-color: #f8f9fa;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .right-section {
+            flex: 1;
+            background-color: #4a0632;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .profile-section, .table-section, .list-section {
+            background-color: #ffffff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .profile-section h3, .table-section h3, .list-section h3 {
+            background-color: #8f0b33;
+            color: white;
+            margin: 0;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        .table-section table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table-section table th, .table-section table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .table-section table th {
+            background-color: #8f0b33;
+            color: white;
+        }
+        .right-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+        .contact, .social-media {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .social-media a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+     <!-- Top Image -->
+     <img src="ny.jpg" alt="Top Image" class="top-image">
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <!-- Personal Information -->
+            <div class="profile-section">
+                <h3>PERSONAL INFORMATION</h3>
+                <p><strong>Name:</strong> Parvati Sivakumar Nair</p>
+                <p><strong>Address:</strong> Vadodara, Gujarat</p>
+                <p><strong>Telephone:</strong> (91) 8200455876</p>
+                <p><strong>Email:</strong> parvati.nair2023@vitstudent.ac.in</p>
+            </div>
+
+            <!-- Educational Details -->
+            <div class="table-section">
+                <h3>EDUCATIONAL DETAILS</h3>
+                <table>
+                    <tr>
+                        <th>Year</th>
+                        <th>Institute</th>
+                        <th>Max Marks</th>
+                        <th>Scored Marks</th>
+                        <th>Percentage/CGPA</th>
+                    </tr>
+                    <tr>
+                        <td>X</td>
+                        <td>Bright Day School</td>
+                        <td>500</td>
+                        <td>470</td>
+                        <td>94%</td>
+                    </tr>
+                    <tr>
+                        <td>XII</td>
+                        <td>Green Valley High School</td>
+                        <td>500</td>
+                        <td>464</td>
+                        <td>92.8%</td>
+                    </tr>
+                    <tr>
+                        <td>First Semester</td>
+                        <td>Vellore Institute of Technology</td>
+                        <td>1000</td>
+                        <td>888</td>
+                        <td>8.88 GPA</td>
+                    </tr>
+                    <tr>
+                        <td>Second Semester</td>
+                        <td>Vellore Institute of Technology</td>
+                        <td>1000</td>
+                        <td>918</td>
+                        <td>9.18 GPA</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Co-Curricular Activities -->
+            <div class="list-section">
+                <h3>CO-CURRICULAR ACTIVITIES</h3>
+                <ul>
+                    <li>Participated in Interschool Debate competition</li>
+                    <li>Three times Debate winner in 2017,2018 and 2019</li>
+                </ul>
+            </div>
+
+            <!-- Extracurricular Activities -->
+            <div class="list-section">
+                <h3>EXTRACURRICULAR ACTIVITIES</h3>
+                <ul>
+                    <li>First in Interschool Dance competition</li>
+                    <li>Member of VIT Dance club</li>
+                </ul>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="list-section">
+                <h3>TECHNICAL SKILLS</h3>
+                <ul>
+                    <li>Programming Languages: Python, Java, C++, C</li>
+                    <li>Web Development: HTML, CSS, JavaScript</li>
+                    <li>Design: UI/UX design using Figma</li>
+                </ul>
+            </div>
+
+            <!-- Hobbies and Personal Details -->
+            <div class="list-section">
+                <h3>HOBBIES & PERSONAL DETAILS</h3>
+                <ul>
+                    <li>Origin state: Kerala, India</li>
+                    <li>Hobbies: Dance, Music, sketching</li>
+                    <li>Languages: English, Malayalam, Hindi, Gujrati, Tamil</li>
+                    <li>Date of Birth: 17th June, 2005</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <img src="me.jpg" alt="Profile Image">
+            <h2>Parvati Sivakumar Nair</h2>
+            <div class="contact">
+                <h3>CONTACT</h3>
+                <p>Vadodara, Gujarat</p>
+                <p>Telephone: (91) 8200455876</p>
+                <p>Email: nairparvati17@gmail.com</p>
+            </div>
+            <div class="social-media">
+                <h3>SOCIAL MEDIA</h3>
+                <p><a href="https://www.linkedin.com/in/Parvati Nair" target="_blank">LinkedIn</a></p>
+                <p><a href="mailto:parvati.nair2023@vitstudent.ac.in">Email</a></p>
+                <p><a href="https://www.instagram.com/parvathyy_nair" target="_blank">Instagram</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

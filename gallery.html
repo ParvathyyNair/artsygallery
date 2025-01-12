@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery - Art and Design Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;background-image: url('https://i.pinimg.com/736x/47/f9/78/47f9784cb6d8f4eaf617cb799d43abbc.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+        }
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: rgba(68, 68, 68, 0.8);
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        nav a:hover {
+            background-color: rgba(85, 85, 85, 0.8);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .gallery img {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: rgba(34, 34, 34, 0.8);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Gallery</h1>
+    <p>Explore our curated collection of artwork and design pieces.</p>
+</header>
+
+<nav>
+    <a href="myindex.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="blog.html">Blog</a>
+    <a href="myindex.html#contact">Contact Us</a>
+</nav>
+
+<section class="gallery">
+    <img src="art1.jpg" alt="Abstract Painting" height="330px">
+    <img src="art2.jpg" alt="Digital Design">
+    <img src="art3.jpg" alt="Sketch Art">
+    <img src="art4.jpg" alt="Modern Illustration">
+    <img src="art5.jpg" alt="Creative Sculpture" height="330px">
+    <img src="art6.jpg" alt="Watercolor Artwork" height="330px">
+</section>
+
+<footer>
+    <p>&copy; 2025 Art and Design Showcase. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

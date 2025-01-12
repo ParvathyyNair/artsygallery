@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Art and Design Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.pinimg.com/736x/47/f9/78/47f9784cb6d8f4eaf617cb799d43abbc.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: rgba(68, 68, 68, 0.8);
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        
+        article {
+            padding: 1rem;
+            margin: 1rem;
+            background-color: rgba(255, 228, 196, 0.764); 
+            border-radius: 10px;
+            text-align: center;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        aside {
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: rgba(34, 34, 34, 0.8);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .form-field {
+            margin-bottom: 1rem;
+        }
+        .form-field label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .form-field input, .form-field textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+        }
+        .form-field button {
+            background-color: #444;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            cursor: pointer;
+        }
+        .form-field button:hover {
+            background-color: #555;
+        }
+        figure {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: inline-block;
+            margin: 10px;
+        }
+        
+        figcaption {
+            font-size: 0.9em;
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 5px;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Art and Design Showcase</h1>
+    <p>Discover the world of creativity and inspiration through art and design.</p>
+</header>
+
+<nav>
+    <a href="myindex.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="blog.html">Blog</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<article>
+    <section>
+        <h2>Welcome to the Art and Design Showcase</h2>
+        <p>Explore our creative journey where art meets design. From illustrations to digital artwork, there's something for everyone.</p>
+    </section>
+    <section>
+        <h2>Gallery</h2>
+        <p>Browse through our exclusive collection of artworks and designs, categorized for easy exploration.</p>
+        <aside>
+            <figure>
+            <img src="art1.jpg" alt="Abstract Painting" style="width:100%; max-width:300px;">
+            <figcaption>Astract Art</figcaption>
+        </figure>
+            <p><a href="gallery.html" target="_blank">View Full Gallery</a></p>
+        </aside>
+    </section>
+    <section>
+        <h2>Blog</h2>
+        <p>Dive into the stories behind the art, get insights into creative processes, and stay updated on upcoming exhibitions.</p>
+        <aside>
+            <figure>
+            <img src="s3.jpg" alt="Sketch Art" style="width:100%; max-width:300px;">
+            <figcaption>Realistic Sketches</figcaption>
+        </figure>
+            <p><a href="blog.html" target="_blank">Read More Blogs</a></p>
+        </aside>
+    </section>
+</article>
+
+<footer id="contact">
+    <h3>Contact Us</h3>
+    <form>
+        <div class="form-field">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-field">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <div class="form-field">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</footer>
+
+</body>
+</html>
